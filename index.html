@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roseline Akinyi | Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body.dark { background-color: #1c1c1c; color: #eee; }
+    .dark .card { background-color: #2b2b2b; border-color: #444; }
+    .dark .navbar, .dark footer { background-color: #2b2b2b !important; }
+    .dark .btn-primary { background-color: #ff9800; border: none; }
+    .carousel-item { height: 90vh; }
+    .carousel-item img { object-fit: cover; height: 100%; width: 100%; }
+    .carousel-caption { background: rgba(0,0,0,0.5); border-radius: 10px; padding: 1rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Roseline.dev</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn btn-primary ms-3" id="toggleBtn">🌙 Dark Mode</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="Developer Desk">
+        <div class="carousel-caption">
+          <h1 class="display-4">Hi, I’m Roseline 👋</h1>
+          <p class="lead">Junior Web Developer | Building clean & user-friendly apps | Interested in Embedded Systems</p>
+          <a href="#projects" class="btn btn-primary m-2">View Projects</a>
+          <a href="Roseline(CV).pdf" class="btn btn-outline-light m-2">Download Resume</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="Code on Screen">
+        <div class="carousel-caption">
+          <h1>🚀 Explore My Projects</h1>
+          <p>From task managers to interactive webs — check out what I’ve built!</p>
+          <a href="#projects" class="btn btn-primary">See Projects</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="Teamwork">
+        <div class="carousel-caption">
+          <h1>👩‍💻 My Skills</h1>
+          <p>JavaScript • React • Python • Node.js • Git • CSS</p>
+          <a href="#skills" class="btn btn-primary">View Skills</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">🚀 Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img src="project1.png" class="card-img-top" alt="Task Manager App">
+            <div class="card-body">
+  <h5 class="card-title">Cafe Menu</h5>
+  <p class="card-text">A simple website that showcases a cafe menu</p>
+  <p><strong>Stack:</strong>Node.js,html,css,javascrip,python</p>
+  <a href="https://ojularoseline.github.io/camper-cafe_repo/" target="_blank" class="btn btn-sm btn-primary">🔗 Live Demo</a>
+    <a href="https://github.com/OjulaRoseline/camper-cafe_repo" target="_blank" class="btn btn-sm btn-outline-secondary">📂 GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img src="project2.png" class="card-img-top" alt="Quiz App">
+            <div class="card-body">
+              <h5 class="card-title">Neumorphism login form</h5>
+              <p class="card-text">just a simple form for filling in your details</p>
+              <p><strong>Stack:</strong> HTML, CSS, JavaScript,python,git,gitHub,Bootstrap,Tailwind</p>
+               <a href="https://ojularoseline.github.io/Neumorphism-login-form-repo/" target="_blank" class="btn btn-sm btn-primary">🔗 Live Demo</a>
+                <a href="https://github.com/OjulaRoseline/Neumorphism-login-form-repo" target="_blank" class="btn btn-sm btn-outline-secondary">📂 GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <span class="badge bg-primary">JavaScript</span>
+        <span class="badge bg-primary">React</span>
+        <span class="badge bg-primary">Node.js</span>
+        <span class="badge bg-primary">Python</span>
+        <span class="badge bg-primary">HTML</span>
+        <span class="badge bg-primary">CSS</span>
+        <span class="badge bg-primary">Git</span>
+        <span class="badge bg-primary">Git Bash</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">👩‍💻 About Me</h2>
+      <p class="text-center mx-auto" style="max-width: 700px;">
+        I’m a junior developer currently working at Multivariable System Tech.  
+        I love solving real-world problems with technology, especially in web development.  
+        My focus is on building applications that are simple, fast, and user-friendly.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">📩 Contact Me</h2>
+      <form class="mx-auto" style="max-width: 500px;">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-light">
+    <p>© 2025 Roseline Akinyi. Built with 💻 and ☕.</p>
+    <div>
+      <a href="https://github.com/OjulaRoseline" class="me-2">GitHub</a> |
+      <a href="https://linkedin.com/Roseline Ojula">LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Dark Mode Script -->
+  <script>
+    const toggleBtn = document.getElementById("toggleBtn");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      toggleBtn.textContent = document.body.classList.contains("dark") ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
+  </script>
+</body>
+</html>
