@@ -150,18 +150,18 @@
   <section id="contact" class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-4">📩 Contact Me</h2>
-      <form class="mx-auto" style="max-width: 500px;">
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Your Name" required>
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Your Email" required>
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Send Message</button>
-      </form>
+      <form action="https://formspree.io/f/xblaqzrq" method="POST" class="mx-auto" style="max-width: 500px;">
+      <div class="mb-3">
+        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Send Message</button>
+    </form>
     </div>
   </section>
 
