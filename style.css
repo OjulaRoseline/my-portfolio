@@ -102,3 +102,12 @@ body::after {
   0% { transform: translateY(0); }
   100% { transform: translateY(-200px); }
 }
+.project-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+
