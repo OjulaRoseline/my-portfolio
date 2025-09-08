@@ -39,7 +39,7 @@ body {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(10px);
   border:1px solid rgba(255,255,255,0.2);
-  color:#fff;
+  color:#a99191;
 }
 .contact-form button:hover { background: rgba(255,255,255,0.2); }
 
@@ -51,7 +51,7 @@ body {
 
 /* Dark Mode */
 body.dark {
-  color: #eee;
+  color: #aeadad;
   background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
   background-size: cover;
 }
@@ -59,7 +59,7 @@ body.dark {
 /* Navbar + Footer in Dark Mode */
 body.dark .navbar, body.dark footer { background: rgba(0,0,0,0.7) !important; }
 body.dark .btn-primary { background-color: #ff6fff; border:none; }
-body.dark .btn-outline-light { color:#fff; border-color:#fff; }
+body.dark .btn-outline-light { color:#c7c6c6; border-color:#fff; }
 
 /* Floating Stars */
 #stars {
@@ -83,11 +83,11 @@ body.dark .btn-outline-light { color:#fff; border-color:#fff; }
 }
 
 body:not(.dark) .star {
-  background-color: #fffc70; /* Yellow stars in light mode */
+  background-color: #024cac; /* Yellow stars in light mode */
 }
 
 body.dark .star {
-  background-color: #ff6fff; /* Pinkish stars in dark mode */
+  background-color: #0895b5; /* Pinkish stars in dark mode */
 }
 
 /* Floating animation */
