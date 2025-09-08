@@ -111,3 +111,43 @@ body::after {
   box-shadow: 0 12px 40px rgba(0,0,0,0.25);
 }
 
+/* Dark Mode Backgrounds */
+body.dark {
+  background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+body.dark .navbar,
+body.dark footer {
+  background-color: rgba(0, 0, 0, 0.7) !important; /* semi-transparent dark */
+}
+
+body.dark .btn-primary {
+  background-color: hsl(298, 100%, 50%);
+  border: none;
+}
+
+body.dark .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+footer {
+  background-color: rgba(245, 245, 245, 0.95); /* Slightly transparent */
+  color: #333; /* Text visible */
+}
+
+body.dark footer {
+  color: #eee;
+}
+.footer-custom {
+  background-color: rgba(245,245,245,0.95);
+  color: #333;
+}
+
+body.dark .footer-custom {
+  background-color: rgba(0,0,0,0.7);
+  color: #eee;
+}
+
+
