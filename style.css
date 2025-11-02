@@ -1,50 +1,221 @@
 /* Global */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #4a6bff;
+  --secondary-color: #6c757d;
+  --light-bg: rgba(255, 255, 255, 0.9);
+  --dark-bg: rgba(17, 24, 39, 0.95);
+  --text-light: #333;
+  --text-dark: #f8f9fa;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
-  margin:0;
-  padding:0;
-  color:#949494;
-  background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
-  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: var(--text-light);
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: var(--primary-color);
+  bottom: -10px;
+  left: 0;
+  border-radius: 2px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #2d3748;
+}
+
+.card-text {
+  color: #4a5568;
+  margin-bottom: 1.25rem;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #f8f9fa;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  width: 120px;
+  text-align: center;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+}
+
+.skill-name {
+  font-weight: 500;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* Contact Form */
+#contact {
+  background-color: #f8f9fa;
+}
+
+.contact-form {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-control {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(74, 107, 255, 0.2);
+  outline: none;
+}
+
+textarea.form-control {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  border-radius: 8px;
   transition: all 0.3s ease;
 }
 
-/* Glassmorphic sections */
-.glass {
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(15px);
-  border-radius: 20px;
-  border: 1px solid rgba(255,255,255,0.2);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+.btn-primary:hover {
+  background-color: #3a5bd9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 107, 255, 0.3);
 }
 
-.glass:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+.btn-outline-light {
+  border-color: white;
+  color: white;
+  transition: all 0.3s ease;
 }
 
-/* Skills badges */
-.skills .badge {
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.2);
-  margin: 0.25rem;
-  transition: transform 0.3s;
+.btn-outline-light:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border-color: white;
 }
-.skills .badge:hover { transform: scale(1.1); }
-
-/* Contact Form */
-.contact-form input, .contact-form textarea, .contact-form button {
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  border:1px solid rgba(255,255,255,0.2);
-  color:#a99191;
-}
-.contact-form button:hover { background: rgba(255,255,255,0.2); }
 
 /* Footer */
-.footer-custom { background: rgba(0,0,0,0.7); color:#b3b1b1; }
+footer {
+  background-color: #2d3748;
+  color: #e2e8f0;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.social-link {
+  color: #e2e8f0;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+.copyright {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #a0aec0;
+}
 
 /* Carousel captions */
 .carousel-caption { background: rgba(0,0,0,0.35); border-radius: 15px; padding:1.5rem; }
@@ -56,10 +227,59 @@ body.dark {
   background-size: cover;
 }
 
-/* Navbar + Footer in Dark Mode */
-body.dark .navbar, body.dark footer { background: rgba(0,0,0,0.7) !important; }
-body.dark .btn-primary { background-color: #ff6fff; border:none; }
-body.dark .btn-outline-light { color:#c7c6c6; border-color:#fff; }
+/* Dark Mode */
+body.dark {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6 {
+  color: #f8f9fa;
+}
+
+body.dark .card,
+body.dark .contact-form,
+body.dark .skill-item {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}
+
+body.dark .card-title,
+body.dark .card-text,
+body.dark .form-control,
+body.dark .form-control::placeholder {
+  color: #e2e8f0;
+}
+
+body.dark .form-control {
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
+
+body.dark .form-control:focus {
+  background-color: #2d3748;
+  border-color: var(--primary-color);
+}
+
+body.dark #skills,
+body.dark #contact {
+  background-color: #1a202c;
+}
+
+body.dark .btn-outline-light {
+  border-color: #e2e8f0;
+  color: #e2e8f0;
+}
+
+body.dark .btn-outline-light:hover {
+  background-color: #e2e8f0;
+  color: #1a202c;
+}
 
 /* Floating Stars */
 #stars {
