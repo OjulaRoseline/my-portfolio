@@ -376,83 +376,12 @@ body.dark .hero-section {
 }
 
 /* About Section */
-.about-img {
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: var(--box-shadow);
-  transition: var(--transition);
+#about {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
 }
 
-.about-img img {
-  transition: var(--transition);
-  width: 100%;
-}
-
-.about-img:hover img {
-  transform: scale(1.05);
-}
-
-.about-content .lead {
-  margin-bottom: 1.5rem;
-}
-
-.about-info {
-  margin-top: 2rem;
-}
-
-.about-info h5 {
-  margin-bottom: 1.5rem;
-  position: relative;
-  padding-bottom: 0.75rem;
-}
-
-.about-info h5::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 50px;
-  height: 3px;
-  background: var(--primary);
-  border-radius: 3px;
-}
-
-.about-info ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.about-info ul li {
-  margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-}
-
-.about-info ul li i {
-  color: var(--primary);
-  margin-right: 0.75rem;
-  font-size: 0.875rem;
-}
-
-.about-info ul li span:first-child {
-  font-weight: 600;
-  min-width: 120px;
-  display: inline-block;
-  color: var(--dark);
-}
-
-body.dark .about-info ul li span:first-child {
-  color: #e2e8f0;
-}
-
-.about-info ul li span:last-child {
-  color: #6b7280;
-}
-
-/* Experience Section */
-#experience {
-  background-color: #f8f9fa;
+body.dark #about {
   position: relative;
   overflow: hidden;
 }
