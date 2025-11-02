@@ -74,9 +74,10 @@
         </div>
         <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
           <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1571171637578-41d2a06747b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+            <img src="profile.jpg" 
                  alt="Roseline Akinyi" 
-                 class="img-fluid rounded-4 shadow-lg">
+                 class="img-fluid rounded-4 shadow-lg"
+                 onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80'">
           </div>
         </div>
       </div>
@@ -95,9 +96,10 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80" 
-               alt="About Me" 
-               class="img-fluid rounded-4 shadow">
+          <img src="profile-about.jpg" 
+               alt="Roseline Akinyi" 
+               class="img-fluid rounded-4 shadow"
+               onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80'">
         </div>
         <div class="col-lg-6" data-aos="fade-left">
           <h2 class="section-title">About Me</h2>
@@ -287,39 +289,59 @@
           <div class="skill-category">
             <h4 class="mb-4"><i class="fas fa-laptop-code me-2 text-primary"></i>Frontend</h4>
             <div class="skill-item">
-              <div class="skill-info">
-                <span>HTML5</span>
-                <span>90%</span>
+              <div class="d-flex align-items-center">
+                <div class="skill-icon me-2">
+                  <i class="fab fa-html5 text-danger"></i>
+                </div>
+                <div class="skill-info w-100">
+                  <span>HTML5</span>
+                  <span>90%</span>
+                </div>
               </div>
-              <div class="progress">
-                <div class="progress-bar bg-html" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>CSS3</span>
-                <span>85%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar bg-css" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-info">
-                <span>JavaScript</span>
-                <span>80%</span>
+              <div class="d-flex align-items-center">
+                <div class="skill-icon me-2">
+                  <i class="fab fa-css3-alt text-primary"></i>
+                </div>
+                <div class="skill-info w-100">
+                  <span>CSS3</span>
+                  <span>85%</span>
+                </div>
               </div>
-              <div class="progress">
-                <div class="progress-bar bg-js" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-info">
-                <span>React</span>
-                <span>75%</span>
+              <div class="d-flex align-items-center">
+                <div class="skill-icon me-2">
+                  <i class="fab fa-js-square text-warning"></i>
+                </div>
+                <div class="skill-info w-100">
+                  <span>JavaScript</span>
+                  <span>80%</span>
+                </div>
               </div>
-              <div class="progress">
-                <div class="progress-bar bg-react" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="d-flex align-items-center">
+                <div class="skill-icon me-2">
+                  <i class="fab fa-react text-info"></i>
+                </div>
+                <div class="skill-info w-100">
+                  <span>React</span>
+                  <span>75%</span>
+                </div>
+              </div>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
@@ -330,12 +352,17 @@
           <div class="skill-category">
             <h4 class="mb-4"><i class="fas fa-server me-2 text-primary"></i>Backend</h4>
             <div class="skill-item">
-              <div class="skill-info">
-                <span>Node.js</span>
-                <span>75%</span>
+              <div class="d-flex align-items-center">
+                <div class="skill-icon me-2">
+                  <i class="fab fa-node-js text-success"></i>
+                </div>
+                <div class="skill-info w-100">
+                  <span>Node.js</span>
+                  <span>70%</span>
+                </div>
               </div>
-              <div class="progress">
-                <div class="progress-bar bg-node" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             <div class="skill-item">
@@ -343,8 +370,8 @@
                 <span>Python</span>
                 <span>80%</span>
               </div>
-              <div class="progress">
-                <div class="progress-bar bg-python" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-purple" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             <div class="skill-item">
@@ -352,8 +379,8 @@
                 <span>SQL</span>
                 <span>70%</span>
               </div>
-              <div class="progress">
-                <div class="progress-bar bg-sql" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-indigo" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
@@ -364,12 +391,17 @@
           <div class="skill-category">
             <h4 class="mb-4"><i class="fas fa-tools me-2 text-primary"></i>Tools & More</h4>
             <div class="skill-item">
-              <div class="skill-info">
-                <span>Git</span>
-                <span>85%</span>
+              <div class="d-flex align-items-center">
+                <div class="skill-icon me-2">
+                  <i class="fab fa-bootstrap text-purple"></i>
+                </div>
+                <div class="skill-info w-100">
+                  <span>Bootstrap</span>
+                  <span>85%</span>
+                </div>
               </div>
-              <div class="progress">
-                <div class="progress-bar bg-git" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-purple" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             <div class="skill-item">
@@ -377,26 +409,22 @@
                 <span>GitHub</span>
                 <span>80%</span>
               </div>
-              <div class="progress">
-                <div class="progress-bar bg-github" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-info">
-                <span>Command Line</span>
-                <span>75%</span>
+              <div class="d-flex align-items-center">
+                <div class="skill-icon me-2">
+                  <i class="fas fa-mobile-alt text-indigo"></i>
+                </div>
+                <div class="skill-info w-100">
+                  <span>Responsive Design</span>
+                  <span>90%</span>
+                </div>
               </div>
-              <div class="progress">
-                <div class="progress-bar bg-terminal" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>UI/UX Design</span>
-                <span>70%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar bg-uiux" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-indigo" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
@@ -486,27 +514,91 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-5">
+  <footer class="footer bg-dark text-white pt-5 pb-3">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          <p class="mb-0">&copy; <span id="currentYear">2025</span> Roseline Akinyi. All rights reserved.</p>
+      <div class="row g-4">
+        <!-- About Column -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-about">
+            <h4 class="text-white mb-4">Roseline Akinyi</h4>
+            <p class="text-muted">Passionate web developer dedicated to creating beautiful, functional, and user-friendly digital experiences.</p>
+            <div class="footer-contact mt-4">
+              <p class="mb-1"><i class="fas fa-envelope me-2"></i> your.email@example.com</p>
+              <p class="mb-0"><i class="fas fa-phone me-2"></i> +254 712 345 678</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 text-center text-md-end">
-          <div class="social-links">
-            <a href="https://github.com/OjulaRoseline" target="_blank" class="me-3">
+        
+        <!-- Quick Links Column -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-white mb-4">Quick Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li class="mb-2"><a href="#home" class="text-muted text-decoration-none hover-text-white"><i class="fas fa-chevron-right me-2 small"></i>Home</a></li>
+            <li class="mb-2"><a href="#about" class="text-muted text-decoration-none hover-text-white"><i class="fas fa-chevron-right me-2 small"></i>About</a></li>
+            <li class="mb-2"><a href="#experience" class="text-muted text-decoration-none hover-text-white"><i class="fas fa-chevron-right me-2 small"></i>Experience</a></li>
+            <li class="mb-2"><a href="#projects" class="text-muted text-decoration-none hover-text-white"><i class="fas fa-chevron-right me-2 small"></i>Projects</a></li>
+            <li class="mb-2"><a href="#skills" class="text-muted text-decoration-none hover-text-white"><i class="fas fa-chevron-right me-2 small"></i>Skills</a></li>
+            <li><a href="#contact" class="text-muted text-decoration-none hover-text-white"><i class="fas fa-chevron-right me-2 small"></i>Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Skills Column -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-white mb-4">Core Skills</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-primary bg-opacity-10 text-primary mb-2 px-3 py-2">HTML5</span>
+            <span class="badge bg-primary bg-opacity-10 text-primary mb-2 px-3 py-2">CSS3</span>
+            <span class="badge bg-warning bg-opacity-10 text-warning mb-2 px-3 py-2">JavaScript</span>
+            <span class="badge bg-info bg-opacity-10 text-info mb-2 px-3 py-2">React</span>
+            <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-2">Node.js</span>
+            <span class="badge bg-purple bg-opacity-10 text-purple mb-2 px-3 py-2">Bootstrap</span>
+          </div>
+        </div>
+        
+        <!-- Newsletter & Social Column -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Newsletter</h5>
+          <p class="text-muted mb-3">Subscribe to my newsletter for the latest updates and articles.</p>
+          <form class="mb-4">
+            <div class="input-group">
+              <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Your email" aria-label="Your email" required>
+              <button class="btn btn-primary" type="submit">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+          
+          <div class="social-links mt-4">
+            <a href="https://github.com/OjulaRoseline" target="_blank" class="text-white me-3" aria-label="GitHub">
               <i class="fab fa-github fa-lg"></i>
             </a>
-            <a href="https://www.linkedin.com/in/roseline-ojula-984251354" target="_blank" class="me-3">
+            <a href="https://www.linkedin.com/in/roseline-ojula-984251354" target="_blank" class="text-white me-3" aria-label="LinkedIn">
               <i class="fab fa-linkedin-in fa-lg"></i>
             </a>
-            <a href="https://twitter.com/" target="_blank" class="me-3">
+            <a href="https://twitter.com/" target="_blank" class="text-white me-3" aria-label="Twitter">
               <i class="fab fa-twitter fa-lg"></i>
             </a>
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/" target="_blank" class="text-white me-3" aria-label="Instagram">
               <i class="fab fa-instagram fa-lg"></i>
             </a>
+            <a href="https://www.facebook.com/" target="_blank" class="text-white" aria-label="Facebook">
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
           </div>
+        </div>
+      </div>
+      
+      <hr class="my-4 border-secondary">
+      
+      <!-- Copyright Row -->
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="mb-0 text-muted">&copy; <span id="currentYear">2025</span> Roseline Akinyi. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0 text-muted small">
+            Made with <i class="fas fa-heart text-danger"></i> by Roseline Akinyi
+          </p>
         </div>
       </div>
     </div>
