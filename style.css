@@ -1542,7 +1542,7 @@ body.dark {
 
 /* Dark Mode */
 body.dark {
-  background-color: #1a202c;
+  background-color: #0f172a;
   color: #e2e8f0;
 }
 
@@ -1552,38 +1552,55 @@ body.dark h3,
 body.dark h4,
 body.dark h5,
 body.dark h6 {
-  color: #f8f9fa;
+  color: #f8fafc;
 }
 
+/* Card and container styling */
 body.dark .card,
 body.dark .contact-form,
-body.dark .skill-item {
-  background-color: #2d3748;
+body.dark .skill-item,
+body.dark .skill-category,
+body.dark .timeline-content,
+body.dark .contact-info {
+  background-color: #1e293b;
   color: #e2e8f0;
+  border-color: #334155;
 }
 
+/* Text and typography */
 body.dark .card-title,
 body.dark .card-text,
 body.dark .form-control,
-body.dark .form-control::placeholder {
+body.dark .form-control::placeholder,
+body.dark .about-info p,
+body.dark .project-description,
+body.dark .timeline-content p,
+body.dark .skill-info span {
+  color: #e2e8f0 !important;
+}
+
+/* Form elements */
+body.dark .form-control {
+  background-color: #1e293b;
+  border-color: #334155;
   color: #e2e8f0;
 }
 
-body.dark .form-control {
-  background-color: #2d3748;
-  border-color: #4a5568;
-}
-
 body.dark .form-control:focus {
-  background-color: #2d3748;
-  border-color: var(--primary-color);
+  background-color: #1e293b;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.25rem rgba(74, 107, 255, 0.25);
 }
 
+/* Section backgrounds */
 body.dark #skills,
-body.dark #contact {
-  background-color: #1a202c;
+body.dark #contact,
+body.dark #projects,
+body.dark #experience {
+  background-color: #0f172a;
 }
 
+/* Buttons */
 body.dark .btn-outline-light {
   border-color: #e2e8f0;
   color: #e2e8f0;
@@ -1591,7 +1608,60 @@ body.dark .btn-outline-light {
 
 body.dark .btn-outline-light:hover {
   background-color: #e2e8f0;
-  color: #1a202c;
+  color: #0f172a;
+}
+
+/* Links */
+body.dark a:not(.btn) {
+  color: #93c5fd;
+}
+
+body.dark a:hover:not(.btn) {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+/* Navigation */
+body.dark .navbar {
+  background-color: rgba(15, 23, 42, 0.98) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Timeline */
+body.dark .timeline::before {
+  background: #334155;
+}
+
+/* Skills section */
+body.dark .skill-info span:first-child {
+  color: #e2e8f0;
+}
+
+/* Footer */
+body.dark .footer {
+  background-color: #0f172a;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark .footer h4,
+body.dark .footer h5 {
+  color: #f8fafc;
+}
+
+body.dark .footer-links a,
+body.dark .footer p,
+body.dark .footer .text-muted {
+  color: #cbd5e1 !important;
+}
+
+body.dark .footer-links a:hover {
+  color: var(--primary) !important;
+}
+
+/* Star background */
+body.dark .star {
+  background-color: #0895b5;
+  box-shadow: 0 0 10px #0895b5, 0 0 20px #0895b5, 0 0 30px #0895b5;
 }
 
 /* Floating Stars */
